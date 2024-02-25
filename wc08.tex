@@ -1,0 +1,64 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsfonts,amsmath,amsthm}
+\usepackage[a4paper]{geometry}
+\usepackage{xcolor}
+
+\newcommand\N{\ensuremath{\mathbb{N}}}
+\newcommand\union{\cup}
+\newcommand\interx{\cap}
+
+\header{CS/MATH 113}{WC08: Sets}{Spring 2024}
+\footer{}{Page \thepage\ of \numpages}{}
+\runningheadrule
+\runningfootrule
+
+\printanswers
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+\title{Weekly Challenge 08: Sets}
+\author{CS/MATH 113 Discrete Mathematics}
+\date{Spring 2024}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\titledquestion{Distributing over a Collection of Sets}
+  Imagine a collection, $S$, of sets. $S$ may be finite, i.e., $\exists n\in \N\ni S = \{S_0,S_1,S_2, S_3, \ldots S_n\}$, or infinite, i.e., $S = \{S_0,S_1,S_2, S_3, \ldots \}$. Here, $\ni$ denotes, ``such that''.
+
+  $S$ can be represented with the help of an \textit{index set}, $A$, as $S = \{S_i\mid i \in A\}$. When $S$ is finite, then $A = \{0,1,2,\ldots,n \}$, otherwise $A=\N$.
+
+  Union and intersection involving collections of sets are defined as follows.
+  \begin{align*}
+    \bigcup_{i \in A}S_i = \{x\mid \exists i \in A \ni x \in S_i\}\\
+    \bigcap_{i \in A}S_i = \{x\mid\forall i \in A\; (x \in S_i)\}
+  \end{align*}
+  \begin{parts}
+  \part[5] Show that
+    \[
+      \bigcup_{i\in A}(T \cap S_i) = T \cap \left(\bigcup_{i\in A}S_i  \right).
+    \]
+  \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+
+  \part[5] Show that
+    \[
+      \bigcap_{i\in A}(T \cup S_i) = T \cup \left(\bigcap_{i\in A}S_i  \right).
+    \]
+  \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+  \end{parts}
+
+\end{questions}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
