@@ -43,7 +43,20 @@
       \bigcup_{i\in A}(T \cap S_i) = T \cap \left(\bigcup_{i\in A}S_i  \right).
     \]
   \begin{solution}
-      % Enter your solution here.
+      
+      Starting from the left hand side.
+      \[
+      \bigcup_{i\in A}(T \cap S_i)
+    \]
+    This can be expanded to
+    \[ \bigcup_{i \in A} (T \cap S_i) = (T \cap S_{i_1}) \cup (T \cap S_{i_2}) \cup \ldots \cup (T \cap S_{i_n})\]
+    where $i_1$, $i_2$,...,$i_n$ are all the elements of set $A$.\\
+    Taking $T$ common
+   \[T \cap \left( S_{i_1} \cup S_{i_2} \cup \ldots \cup S_{i_n} \right)\]
+   This can be replaced\[S_{i_1} \cup S_{i_2} \cup \ldots \cup S_{i_n}\] 
+     \[T \cap \left(\bigcup_{i\in A}S_i  \right).
+    \]
+    Hence proved
     \end{solution}
 
   \part[5] Show that
@@ -51,7 +64,16 @@
       \bigcap_{i\in A}(T \cup S_i) = T \cup \left(\bigcap_{i\in A}S_i  \right).
     \]
   \begin{solution}
-      % Enter your solution here.
+      
+       Left hand side can be expanded to.
+       \[\bigcap_{i \in A} (T \cup S_i) = (T \cup S_{i_1} )\cap( T \cup S_{i_2}) \cap \ldots \cap (T \cup S_{i_n})\]
+    where $i_1$, $i_2$,...,$i_n$ are all the elements of set $A$.\\
+     Taking $T$ common.
+        \[T \cup \left( S_{i_1} \cap S_{i_2} \cap \ldots \cap S_{i_n} \right)\]
+        \[T \cup \left(\bigcap_{i\in A}S_i  \right)\]
+        Hence proved
+
+    
     \end{solution}
   \end{parts}
 
